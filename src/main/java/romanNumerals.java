@@ -6,6 +6,16 @@ public class romanNumerals {
 
         StringBuilder romanStr = new StringBuilder();
 
+        while (inputNum == 10) {
+            romanStr.append("X");
+            inputNum = inputNum - 10;
+        }
+        
+        while (inputNum == 9) {
+            romanStr.append("IX");
+            inputNum = inputNum - 9;
+        }
+
         while (inputNum >= 6 && inputNum <= 8) {
             romanStr.append("V");
             inputNum = inputNum - 5; // 6=1, 7=2, 8=3
@@ -25,7 +35,7 @@ public class romanNumerals {
             romanStr.append("I");
             inputNum = inputNum - 1;
         }
-        
+
         return romanStr.toString();
     }
 
