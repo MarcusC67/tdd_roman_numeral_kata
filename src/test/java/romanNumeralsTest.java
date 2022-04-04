@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class romanNumeralsTest {
 
     @ParameterizedTest
-    @CsvSource(value = {"1:I"}, delimiter = ':')
+    @CsvSource(value = {"1:I","2:II","3:III"}, delimiter = ':')
     public void checkConvert1(int input, String expected) {
         // Arrange - setting up the objects needed for tests
         romanNumerals convert = new romanNumerals();
