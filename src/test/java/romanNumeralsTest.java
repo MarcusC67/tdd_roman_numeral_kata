@@ -7,7 +7,7 @@ public class romanNumeralsTest {
 
     @ParameterizedTest
     @CsvSource(value = {"1:I"}, delimiter = ':')
-    public void checkConvert1to3(int input, String expected) {
+    public void checkConvert1(int input, String expected) {
         // Arrange - setting up the objects needed for tests
         romanNumerals convert = new romanNumerals();
         // Act and assert
