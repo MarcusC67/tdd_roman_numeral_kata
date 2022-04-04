@@ -5,7 +5,7 @@ public class romanNumerals {
     public String integerToRomanNumeral(int inputNum) {
 
         StringBuilder romanStr = new StringBuilder();
-        while (inputNum == 1) {
+        while (inputNum >= 1 && inputNum <= 3) {
             romanStr.append("I");
             inputNum = inputNum - 1;
         }
